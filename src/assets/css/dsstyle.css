@@ -1,4 +1,4 @@
-/* @import url(base.css); */
+ @import url(base.css); 
 
 
 /* || VARIABLES */
@@ -17,6 +17,7 @@
     margin-top: 4rem;
     position: relative;
 }
+
 .heading-font-size {
     color: #999;
     font-size: 1.2rem;
