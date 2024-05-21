@@ -13,16 +13,10 @@
 /* || BLOCKS */
 /* components */
 .example {
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin: 4rem 0.8rem 4rem 0.8rem;
     position: relative;
 }
 
-.flex-example {
-    display: flex;
-}
 
 .small-text {
     font-size: 1.2rem;
@@ -47,6 +41,11 @@
 
 /* || MODIFIERS */
 /* inremental style changes  .blk-mod */
+.example-flex {
+    display: flex;
+}
+
+
 .colorbox-graydark {
     background-color: var(--BGCOLOR-GRAY-DARK);
 }
