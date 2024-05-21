@@ -18,15 +18,44 @@
     position: relative;
 }
 
-.heading-font-size {
-    color: #999;
+.small-text {
     font-size: 1.2rem;
     letter-spacing: normal;
 }
 
+.colorbox {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    color: var(--COLOR-WHITE);
+    
+}
+
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
-  
+/* .blk_item */
+
 
 /* || MODIFIERS */
-/* inremental style changes  .blk--mod */
+/* inremental style changes  .blk-mod */
+.example-color {
+    display: flex;
+
+}
+
+.colorbox-graydark {
+    background-color: var(--BGCOLOR-GRAY-DARK);
+}
+
+.colorbox-gray {
+    background-color: var(--BGCOLOR-GRAY);
+}
+
+.colorbox-graylight {
+    background-color: var(--BGCOLOR-GRAY-LIGHT);
+}

@@ -3,7 +3,20 @@
 
 /* || VARIABLES */
 :root {
-    --BGCOLOR: white;
+    --COLOR-WHITE: white;
+    --COLOR-GRAY-DARK: #4b5156;
+    --COLOR-GRAY: #b2b6b9;
+    --COLOR-GRAY-LIGHT: #e3e5e7;
+    --BGCOLOR-GRAY: var(--COLOR-GRAY);
+    --BGCOLOR-GRAY-LIGHT: var(--COLOR-GRAY-LIGHT);
+    --BGCOLOR-GRAY-DARK: var(--COLOR-GRAY-DARK);
+
+    --COLOR-BLUE: #295db7;
+    --BGCOLOR-BLUE: var(--COLOR-BLUE);
+    
+
+    
+
 }
 
 /* || UTILITY CLASSES */
@@ -22,11 +35,33 @@
 
 /* || BLOCKS */
 /* components */
+.button-blue {
+    background-color: var(--BGCOLOR-BLUE);
+    border-color: var(--BGCOLOR-BLUE);
+}
+
+.button-blue.button-clear, 
+.button-blue.button-outline,
+input[type='submit'].button-blue.button-clear {
+    background-color: transparent;
+    color: var(--COLOR-BLUE);
+}
+
+.button-blue.button-clear {
+    border-color: transparent;
+}
+
+/*.button-outline {
+   border: 1px solid var(--BGCOLOR-BLUE);
+   color: var(--COLOR-BLUE);
+}*/
+
 
 
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
+/* .blk_item */
   
 
 /* || MODIFIERS */
-/* inremental style changes  .blk--mod */
+/* inremental style changes  .blk-mod */
