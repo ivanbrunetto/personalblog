@@ -8,12 +8,21 @@
 
 
 /* || GENERAL STYLES */
+body {
+    margin: 0.8rem;
+}
 
 
 /* || BLOCKS */
 /* components */
+
+.nav-entry {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
 .example {
-    margin: 4rem 0.8rem 4rem 0.8rem;
+    margin: 2.2rem 0.8rem 2.2rem 0.8rem;
     position: relative;
 }
 
@@ -33,18 +42,35 @@
     color: var(--COLOR-WHITE);
     
 }
+.footer {
+    height: 8rem;
+    background-color: var(--BGCOLOR-GRAY-LIGHT);
+    display: flex;
+    align-items: center;
+}
 
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
 /* .blk_item */
+.header_title {
+    text-align: center;
+}
 
+.header_nav {
+    display: block;
+}
+
+.header_ol {
+    margin: 1rem;
+}
 
 /* || MODIFIERS */
 /* inremental style changes  .blk-mod */
 .example-flex {
     display: flex;
+    flex-direction: column;
+    
 }
-
 
 .colorbox-graydark {
     background-color: var(--BGCOLOR-GRAY-DARK);
@@ -60,4 +86,16 @@
 
 .colorbox-blue {
     background-color: var(--BGCOLOR-BLUE);
+}
+
+
+@media (min-width: 600px) {
+    .header_nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .example-flex {
+        flex-direction: row;
+    }
 }
