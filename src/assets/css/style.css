@@ -6,17 +6,22 @@
 
 
 /* || GENERAL STYLES */
+body {
+  margin: 1rem;
+}
+
 
 /* || BLOCKS */
 /* components */
 .layout-container {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 15rem 1fr 9rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8rem auto 1fr 9rem;
   grid-template-areas: 
-    "header header header header header header header header"
-    "sidebar sidebar main main main main main main"
-    "footer footer footer footer footer footer footer footer"
+    "header"
+    "sidebar"
+    "main"
+    "footer"
 }
 
 .header {
@@ -25,20 +30,71 @@
 
 .sidebar {
   grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
 }
+
 
 .main {
   grid-area: main;
 }
 
+.bdash-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bpost {
+  background-color: var(--BGCOLOR-GRAY-LIGHT);
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  
+}
+
 .footer {
   grid-area: footer;
+  color: var(--COLOR-WHITE);
+  background-color: var(--BGCOLOR-GRAY-DARK);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border-radius: 5px;
+
 }
 
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
 /* .blk_item */
-
+.header_title {
+  margin: 1rem;
+  font-weight: 400;
+}
 
 /* || MODIFIERS */
 /* inremental style changes  .blk-mod */
+
+
+@media (min-width: 600px) {
+  .layout-container {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 15rem 1fr 9rem;
+    grid-template-areas: 
+      "header header"
+      "sidebar main"
+      "footer footer"
+  }
+
+  .bdash-container {
+    flex-direction: row;
+  }
+  
+}
+
+
+@media (min-width: 1200px) {
+
+}
