@@ -40,7 +40,7 @@ body {
   grid-area: main;
 }
 
-.bdash-container {
+.bdashboard {
   display: flex;
   flex-direction: column;
 }
@@ -52,7 +52,9 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1.2rem;
-  
+  width: 23rem;
+  height: 30rem;
+ 
 }
 
 .footer {
@@ -80,7 +82,7 @@ body {
 @media (min-width: 600px) {
   .layout-container {
     display: grid;
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: 28rem 1fr;
     grid-template-rows: 15rem 1fr 9rem;
     grid-template-areas: 
       "header header"
@@ -88,13 +90,18 @@ body {
       "footer footer"
   }
 
-  .bdash-container {
+  .bdashboard {
     flex-direction: row;
+    justify-content: space-between;
+    min-width: 82rem;
   }
-  
+ 
 }
 
 
 @media (min-width: 1200px) {
-
+  .bdashboard {
+    max-width: 125rem;
+  }
+  
 }
