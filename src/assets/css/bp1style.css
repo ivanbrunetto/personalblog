@@ -1,0 +1,36 @@
+@import url(base.css);
+
+/* || VARIABLES */
+
+/* || UTILITY CLASSES */
+
+
+/* || GENERAL STYLES */
+body {
+  margin: 1rem;
+}
+
+
+/* || BLOCKS */
+/* components */
+
+/* || ELEMENTS */
+/* no standalone meaning - semantically tied to the block */
+/* .blk_item */
+.header_title {
+  margin: 1rem;
+  font-weight: 400;
+}
+
+/* || MODIFIERS */
+/* inremental style changes  .blk-mod */
+
+
+@media (min-width: 600px) {
+ 
+}
+
+
+@media (min-width: 1200px) {
+  
+}
