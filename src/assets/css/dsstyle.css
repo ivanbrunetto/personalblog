@@ -26,7 +26,6 @@ body {
     position: relative;
 }
 
-
 .small-text {
     font-size: 1.2rem;
     letter-spacing: normal;
@@ -42,12 +41,14 @@ body {
     color: var(--COLOR-WHITE);
     
 }
+
 .footer {
     height: 8rem;
     background-color: var(--BGCOLOR-GRAY-LIGHT);
     display: flex;
     align-items: center;
 }
+
 
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
