@@ -7,19 +7,20 @@
 
 /* || GENERAL STYLES */
 body {
-  margin: 1rem;
+  margin: 3rem;
 }
 
 
 /* || BLOCKS */
 /* components */
 
+
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
 /* .blk_item */
 .header_title {
-  margin: 1rem;
-  font-weight: 400;
+    margin-top: 2rem;
+
 }
 
 /* || MODIFIERS */
@@ -27,6 +28,10 @@ body {
 
 
 @media (min-width: 600px) {
+    .avatar {
+        float: left;
+        margin-right: 2rem;
+    }
  
 }
 
