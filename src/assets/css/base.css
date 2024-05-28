@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
-    
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* || VARIABLES */
 :root {
@@ -65,6 +65,24 @@ input[type='submit'].button-blue.button-clear {
     margin-right: 2rem;
 }
 
+.fa {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    width: 5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    background-color: var(--BGCOLOR-GRAY-DARK);
+    color: var(--COLOR-WHITE);
+  }
+
+  
+
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
 /* .blk_item */
@@ -72,3 +90,28 @@ input[type='submit'].button-blue.button-clear {
 
 /* || MODIFIERS */
 /* inremental style changes  .blk-mod */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+  
