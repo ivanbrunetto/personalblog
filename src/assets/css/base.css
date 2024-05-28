@@ -35,6 +35,10 @@ a {
     color: var(--COLOR-BLUE);
 }
 
+hr {
+    margin: 1rem 0;
+}
+
 /* || BLOCKS */
 /* components */
 .button-blue {
@@ -53,11 +57,19 @@ input[type='submit'].button-blue.button-clear {
     border-color: transparent;
 }
 
+.authorinfo {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    font-weight: 400;
+  }
+  
+
 .avatar {
     width: 12rem;
     height: 12rem;
     background-image: url("https://via.placeholder.com/120x120");
     border-radius: 50%;
+    margin-bottom: 1.2rem;
 }
 
 .avatar.left {
@@ -68,11 +80,11 @@ input[type='submit'].button-blue.button-clear {
 .fa {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 3rem;
-    width: 5rem;
+    font-size: 2rem;
+    width: 4rem;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 0.5rem 0.2rem;
     border-radius: 50%;
   }
   
