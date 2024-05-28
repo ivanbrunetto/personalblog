@@ -48,7 +48,17 @@ input[type='submit'].button-blue.button-clear {
     border-color: transparent;
 }
 
+.avatar {
+    width: 12rem;
+    height: 12rem;
+    background-image: url("https://via.placeholder.com/120x120");
+    border-radius: 50%;
+}
 
+.avatar.left {
+    float: left;
+    margin-right: 2rem;
+}
 
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
