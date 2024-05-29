@@ -6,14 +6,19 @@
 /* || VARIABLES */
 :root {
     --COLOR-WHITE: white;
+    
     --COLOR-GRAY-DARK: #4b5156;
     --COLOR-GRAY: #b2b6b9;
     --COLOR-GRAY-LIGHT: #e3e5e7;
+    --COLOR-GRAY-LIGHT2: #f5f5f5;
+    
+    --BGCOLOR-GRAY-DARK: var(--COLOR-GRAY-DARK);
     --BGCOLOR-GRAY: var(--COLOR-GRAY);
     --BGCOLOR-GRAY-LIGHT: var(--COLOR-GRAY-LIGHT);
-    --BGCOLOR-GRAY-DARK: var(--COLOR-GRAY-DARK);
-
+    --BGCOLOR-GRAY-LIGHT2: var(--COLOR-GRAY-LIGHT2);
+    
     --COLOR-BLUE: #6397ef;
+    
     --BGCOLOR-BLUE: var(--COLOR-BLUE);
 
 }
@@ -31,6 +36,43 @@
     box-sizing: border-box;
 }
 
+h1, 
+h2, 
+h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+blockquote {
+    border-left: 0.3rem solid var(--COLOR-GRAY);
+}
+
+pre {
+    background: var(--COLOR-GRAY-LIGHT);
+    border-left: 0.3rem solid var(--COLOR-BLUE);
+}
+code {
+    background: var(--COLOR-GRAY-LIGHT2);
+
+}
+
 a {
     color: var(--COLOR-BLUE);
 }
@@ -41,19 +83,19 @@ hr {
 
 /* || BLOCKS */
 /* components */
-.button-blue {
+.button {
     background-color: var(--BGCOLOR-BLUE);
     border-color: var(--BGCOLOR-BLUE);
 }
 
-.button-blue.button-clear, 
-.button-blue.button-outline,
-input[type='submit'].button-blue.button-clear {
+.button.button-clear, 
+.button.button-outline,
+input[type='submit'].button.button-clear {
     background-color: transparent;
     color: var(--COLOR-BLUE);
 }
 
-.button-blue.button-clear {
+.button.button-clear {
     border-color: transparent;
 }
 
@@ -93,12 +135,36 @@ input[type='submit'].button-blue.button-clear {
     color: var(--COLOR-WHITE);
   }
 
-  
+.card {
+  background-color: var(--BGCOLOR-GRAY-LIGHT);
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  width: 23rem;
+}
+
+
 
 /* || ELEMENTS */
 /* no standalone meaning - semantically tied to the block */
 /* .blk_item */
-  
+.card_title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: -.1rem;
+}
+
+.card_headline {
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+
+.card_button {
+    height: 5rem;
+}
 
 /* || MODIFIERS */
 /* inremental style changes  .blk-mod */

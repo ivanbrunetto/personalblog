@@ -45,18 +45,6 @@ body {
   flex-direction: column;
 }
 
-
-.bpost {
-  background-color: var(--BGCOLOR-GRAY-LIGHT);
-  border-radius: 5px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1.2rem;
-  width: 23rem;
-  height: 30rem;
- 
-}
-
 .footer {
   grid-area: footer;
   color: var(--COLOR-WHITE);
