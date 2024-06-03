@@ -1,0 +1,41 @@
+
+@media (min-width: 600px) {
+    .homelayout-container {
+      display: grid;
+      grid-template-columns: 28rem 1fr;
+      grid-template-rows: 15rem 1fr 9rem;
+      grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer"
+    }
+  
+    .homebdashboard {
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 82rem;
+    }
+
+    .postauthorcontainer {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dsheader_nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .dsexample-flex {
+        flex-direction: row;
+    }
+   
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .bdashboard {
+      max-width: 125rem;
+    }
+    
+  }

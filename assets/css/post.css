@@ -1,0 +1,30 @@
+
+/* || VARIABLES */
+
+/* || UTILITY CLASSES */
+
+
+/* || GENERAL STYLES */
+
+
+/* || BLOCKS */
+/* components */
+
+
+/* || ELEMENTS */
+/* no standalone meaning - semantically tied to the block */
+/* .blk_item */
+.postheader_title {
+    margin-top: 2rem;
+
+}
+
+.postauthorcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* || MODIFIERS */
+/* inremental style changes  .blk-mod */
