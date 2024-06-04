@@ -1,8 +1,6 @@
-
 @media (min-width: 600px) {
     .homelayout-container {
-      display: grid;
-      grid-template-columns: 28rem 1fr;
+      grid-template-columns: 16rem 1fr;
       grid-template-rows: 15rem 1fr 9rem;
       grid-template-areas: 
         "header header"
@@ -11,9 +9,8 @@
     }
   
     .homebdashboard {
-      flex-direction: row;
-      justify-content: space-between;
-      min-width: 82rem;
+      flex-flow: row wrap;
+      justify-content: flex-start;
     }
 
     .postauthorcontainer {
@@ -34,6 +31,11 @@
   
   
   @media (min-width: 1200px) {
+    .homelayout-container {
+      max-widthh: 1600px;
+      grid-template-columns: 28rem 1fr;
+    }
+    
     .bdashboard {
       max-width: 125rem;
     }

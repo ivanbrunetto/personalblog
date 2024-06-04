@@ -9,6 +9,11 @@
 
 /* || BLOCKS */
 /* components */
+.homebody {
+  display: flex;
+  justify-content: center;
+}
+
 .homelayout-container {
   display: grid;
   grid-template-columns: 1fr;

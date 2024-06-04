@@ -141,8 +141,7 @@ input[type='submit'].button.button-clear {
 .card {
   background-color: var(--BGCOLOR-GRAY-LIGHT);
   border-radius: 5px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   padding: 1.2rem;
   width: 23rem;
 }
